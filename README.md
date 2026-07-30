@@ -1,9 +1,10 @@
-# SensiFoot 🩺⚙️
+# SensiFoot 
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![PyQt5](https://img.shields.io/badge/UI-PyQt5-green.svg?logo=qt&logoColor=white)](https://pypi.org/project/PyQt5/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+
 
 **SensiFoot** is a high-fidelity biomedical diagnostic interface and hardware simulator engineered to process mathematically accurate Force Sensing Resistor (FSR) telemetry. Designed for prosthetists, podiatrists, and biomedical engineers, SensiFoot simulates complex plantar pressure arrays to evaluate real-time biomechanical diagnostics prior to physical hardware deployment.
 
@@ -11,9 +12,9 @@ The application evaluates critical clinical metrics including **Center of Pressu
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-### 🦶 1. Interactive Anatomical Mesh (6-Sensor Array)
+### 1. Interactive Anatomical Mesh (6-Sensor Array)
 * **Anatomical Mapping**: Polygon tessellations mapped to six key anatomical load zones:
   - **Zone 0**: Heel
   - **Zone 1**: Midfoot Lateral
@@ -23,11 +24,11 @@ The application evaluates critical clinical metrics including **Center of Pressu
   - **Zone 5**: Hallux (Big Toe)
 * **Tiered Z-Index Layering**: Strict rendering hierarchy for crisp selection and node isolation without visual clipping.
 
-### ⚡ 2. Real-Time Telemetry & Hardware Simulation
+### 2. Real-Time Telemetry & Hardware Simulation
 * **FSR Signal Pipeline**: Simulates analog hardware voltage input ($0.00\,\text{V} \rightarrow 3.30\,\text{V}$).
 * **Dynamic SI Scaling**: Automatically formats engineering unit prefixes ($\text{k}\Omega$, $\text{M}\Omega$, $\mu\text{S}$, $\text{N}$, $\text{kN}$) with 2-decimal precision across the telemetry HUD.
 
-### 🩺 3. Clinical Diagnostics & Gait Analytics
+### 3. Clinical Diagnostics & Gait Analytics
 * **Biomechanical Gait Phase HUD**: Dynamically evaluates planar force distributions to output instant gait phases:
   - `SWING PHASE` ($F_{\text{total}} < 10\,\text{N}$)
   - `HEEL STRIKE` ($F_{\text{heel}} > F_{\text{forefoot}}$)
@@ -36,13 +37,18 @@ The application evaluates critical clinical metrics including **Center of Pressu
 * **Center of Pressure (CoP) Tracker**: Computes spatial centroid balance using weighted force averaging, rendering live trajectory vectors.
 * **Localized Ulcer Risk Alarm**: Dynamic, weight-based risk detection triggering visual red flashing alarms when localized thresholds are breached.
 
-### 🎙️ 4. Voice Coach & Clinical Reporting
+### 4. Voice Coach & Clinical Reporting
 * **Voice Coach Assistant**: Integrated TTS engine (`pyttsx3`) offering live audible safety warnings during critical pressure events.
 * **PDF Report Generation**: Automated clinical PDF report export detailing posture balance, force metrics, and recommendations (`fpdf2`).
 
 ---
 
-## 📐 Mathematical Model & Physics Pipeline
+## Demo
+
+
+---
+
+## Mathematical Model & Physics Pipeline
 
 The FSR simulation calculates applied force from voltage output using standard voltage divider physics:
 
@@ -61,7 +67,7 @@ Where:
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```mermaid
 graph TD
@@ -108,7 +114,7 @@ SensiFoot/
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 * Python **3.8+**
@@ -135,7 +141,7 @@ python main.py
 
 ---
 
-## 🧪 Simulation Scenarios
+## Simulation Scenarios
 
 1. **Manual Sensor Isolation**: Click any zone on the central foot wireframe (e.g., *Heel* or *Hallux*) and adjust the Voltage slider at the bottom to inspect real-time force conversions.
 2. **Clinical Gait Scenarios**: Click `Heel Strike`, `Mid-Stance`, or `Heel-Off` in the scenario menu to test dynamic gait phase updates.
@@ -144,13 +150,52 @@ python main.py
 
 ---
 
-## 👥 Contributors
+## Contributors
 
-* **Mazen Marwan** ([@Mazenmarwan023](https://github.com/Mazenmarwan023))
-* **Yassien Tawfik** ([@YassienTawfikk](https://github.com/YassienTawfikk))
-* **Seif Taha** ([@Seiftaha](https://github.com/Seiftaha))
-* **Mohamed Yasser** ([@mohamedddyasserr](https://github.com/mohamedddyasserr))
-* **Youssef Taha** ([@yousseftaha167](https://github.com/yousseftaha167))
+<div>
+ <table align="center">
+        <tr>
+          <td align="center">
+                <a href="https://github.com/Mazenmarwan023" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/127551364?v=4" width="150px;" alt="Mazen Marwan"/>
+                    <br/>
+                    <sub><b>Mazen Marwan</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Seiftaha" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/127027353?v=4" width="150px;" alt="Seif Taha"/>
+                    <br/>
+                    <sub><b>Seif Taha</b></sub>
+                </a>
+            </td>         
+            <td align="center">
+                <a href="https://github.com/YassienTawfikk" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/126521373?v=4" width="150px;"
+                         alt="Yassien Tawfik"/>
+                    <br/>
+                    <sub><b>Yassien Tawfik</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/mohamedddyasserr" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/126451832?v=4" width="150px;"
+                         alt="Mohamed Yasser"/>
+                    <br/>
+                    <sub><b>Mohamed Yasser</b></sub>
+                </a>
+            </td>
+              </td>
+           <td align="center">
+              <a href="https://github.com/yousseftaha167" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/128304243?v=4" width="150px;" alt="Youssef Taha"/>
+                <br/>
+                <sub><b>Youssef Taha</b></sub>
+              </a>
+            </td>
+        </tr>
+    </table>
+</div>
 
 ---
 
