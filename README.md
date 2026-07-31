@@ -45,6 +45,7 @@ The application evaluates critical clinical metrics including **Center of Pressu
 
 ## Demo
 
+https://github.com/user-attachments/assets/f56bc2e8-fcbe-42d5-98e8-e07a833715cb
 
 ---
 
@@ -86,7 +87,10 @@ graph TD
 
 ---
 
-## 📁 Project Structure
+##
+
+
+ Project Structure
 
 ```
 SensiFoot/
